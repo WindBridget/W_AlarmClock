@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">W_AlarmClock</string>
+    <string name="country_prompt">Choose a song</string>
+
+    <string-array name="wind_sounds">
+        <item>"..."</item>
+        <item>"Song 1"</item>
+        <item>"Song 2"</item>
+        <item>"Song 3"</item>
+        <item>"Song 4"</item>
+        <item>"Song 5"</item>
+        <item>"Song 6"</item>
+        <item>"Song 7"</item>
+        <item>"Song 8"</item>
+        <item>"Song 9"</item>
+    </string-array>
+</resources>

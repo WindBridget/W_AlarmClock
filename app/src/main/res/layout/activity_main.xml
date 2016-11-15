@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2c3135"
+        android:gravity="center"
+        android:text="Welcome to my Alarm Clock"
+        android:textColor="#FFFFFF" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_margin="15dp">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm Name:" />
+
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:ems="10" />
+
+        </TableRow>
+
+        <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time:" />
+
+            <TextView
+                android:id="@+id/txttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#FF0000" />
+
+            <Button
+                android:id="@+id/btntime"
+                android:layout_width="match_parent"
+                android:text="Set Time"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Song:" />
+            <Spinner
+                android:id="@+id/wind_spinner"
+                android:entries="@array/wind_sounds"
+                android:prompt="@string/country_prompt"
+                android:layout_marginBottom="14dp"
+                android:layout_span="2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Confirm" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2c3135"
+        android:text="List Alarm:"
+        android:gravity="center"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/lvalarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:headerDividersEnabled="true">
+    </ListView>
+
+</LinearLayout>
